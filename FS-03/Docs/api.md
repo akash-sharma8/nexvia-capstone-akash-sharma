@@ -39,6 +39,11 @@ Auth: `Authorization: Bearer <token>` where marked.
 | GET | /certificates/:id/verify | no | any | Public verification |
 | POST | /payments/order/:courseId | yes | student | Create Razorpay order |
 | POST | /payments/verify | yes | student | Verify signature, enroll |
+| GET | /admin/stats | yes | admin | Platform totals |
+| GET | /admin/users | yes | admin | Search users (`search`, `role`) |
+| PATCH | /admin/users/:id/role | yes | admin | Change student or instructor |
+| DELETE | /admin/users/:id | yes | admin | Delete user (blocked if they own courses) |
+| GET | /admin/courses | yes | admin | All courses including drafts |
 | GET | /payments/earnings | yes | instructor, admin | Revenue summary |
 
 ## Common errors
