@@ -32,6 +32,8 @@ A full online school: courses, HLS video lessons, quizzes with auto-grading, liv
 | Certificates | PDFKit + QRCode |
 | Tests | Jest + Supertest |
 
+> **Stack note:** The brief I worked from lists the MERN stack with Redux Toolkit, so this project uses MongoDB (Mongoose) and JavaScript, with Recharts for charts. Docker is used for local MongoDB and Redis and for the API image.
+
 ## Features
 
 | Feature | How it works |
