@@ -15,7 +15,16 @@ export default function VideoPlayer({ lessonId, onEnded }) {
     });
 
     hls.on(Hls.Events.ERROR, (event, data) => {
-      if (data.fatal) setError("Could not load this video (are you enrolled?)");
+      if (data.fatal) {
+  const status = data.response?.code;
+  if (status === 410) {
+    setError("This video is not available right now. The instructor needs to upload it again.");
+  } else if (status === 403) {
+    setError("Enroll in this course to watch this video.");
+  } else {
+    setError("Could not load this video. Please try again.");
+  }
+}
     });
 
     hls.loadSource(src);
