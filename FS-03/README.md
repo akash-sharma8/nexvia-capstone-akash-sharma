@@ -150,7 +150,7 @@ npm run dev                 # http://localhost:5173
 | Instructor | rohit@lms.com | teacher123 |
 | Student | aman@lms.com | student123 |
 
-Razorpay test card: `4111 1111 1111 1111`, any future expiry, any CVV. UPI: `success@razorpay`.
+Razorpay test card: `6527 6589 0000 1005`, any future expiry, any CVV. UPI: `success@razorpay`.
 
 ## Tests
 
